@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+	
+		
+	</style>
+</head>
+<body>
+	<button>
+		5
+	</button>
+	<script>
+	let btn=document.querySelector('button')
+	let num=5
+	function timeDe(){
+		num--;
+	}
+	btn.innerHTML=num
+	while(num!==-1)
+	{
+	let test=setInterval(timeDe,1000)
+	btn.innerHTML=num
+	}
+	clearInterval(test)
+	
+	</script>
+</body>
+</html>
